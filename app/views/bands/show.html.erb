@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Bandname:</strong>
+  <%= @band.bandname %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @band.genre %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @band.about %>
+</p>
+
+<%= link_to 'Edit', edit_band_path(@band) %> |
+<%= link_to 'Back', bands_path %>

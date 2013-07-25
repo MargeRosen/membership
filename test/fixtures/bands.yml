@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  bandname: MyString
+  genre: MyString
+  musicians: 1
+  wanted: 
+  about: MyText
+
+two:
+  bandname: MyString
+  genre: MyString
+  musicians: 1
+  wanted: 
+  about: MyText
