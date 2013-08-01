@@ -3,6 +3,6 @@ class Musician < ActiveRecord::Base
          #:recoverable, :rememberable, :trackable, :validatable
 
   has_many :band_members
-  has_many :bands, through: :band_members
+  has_many :bands, :through => :band_members
 
 end

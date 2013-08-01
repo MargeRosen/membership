@@ -7,8 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <nav>
+    <%#= link_to "Musician", musician_path(musician) %> |
+    <%#= link_to "Band", band_path(band) %>
+  </nav>
+  <% flash.each do |key, value| %>
+    <div class="flash" id="<%= key %>">
+      <%= value %>
+    </div>
+  <% end %>
+  <!p class="notice"><%#= notice %><!/p>
+  <!p class="alert"><%#= alert %><!/p>
 
 <%= yield %>
 

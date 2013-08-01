@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class BandMemberTest < ActiveSupport::TestCase
+class BandMembershipTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

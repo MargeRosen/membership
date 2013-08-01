@@ -1,6 +1,6 @@
 class CreateBandMemberships < ActiveRecord::Migration
   def change
-    create_table :band_membership do |t|
+    create_table :band_memberships do |t|
       t.date :start
       t.date :left
       t.references :musician, index: true

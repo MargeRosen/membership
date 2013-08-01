@@ -1,0 +1,29 @@
+<h1>Listing Band Membership</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Start</th>
+      <th>Left</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @band_memberships.each do |band_membership| %>
+      <tr>
+        <td><%= band_membership.start %></td>
+        <td><%= band_membership.left %></td>
+        <td><%= link_to 'Show', band_membership %></td>
+        <td><%= link_to 'Edit', edit_band_membership_path(band_membership) %></td>
+        <td><%= link_to 'Destroy', band_membership, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Band Memberhips', new_band_membership_path %>

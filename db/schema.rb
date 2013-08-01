@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130725230646) do
+ActiveRecord::Schema.define(version: 20130801194121) do
 
   create_table "band_membership", force: true do |t|
     t.date     "start"
@@ -24,6 +24,18 @@ ActiveRecord::Schema.define(version: 20130725230646) do
 
   add_index "band_membership", ["band_id"], name: "index_band_membership_on_band_id"
   add_index "band_membership", ["musician_id"], name: "index_band_membership_on_musician_id"
+
+  create_table "band_memberships", force: true do |t|
+    t.date     "start"
+    t.date     "left"
+    t.integer  "musician_id"
+    t.integer  "band_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "band_memberships", ["band_id"], name: "index_band_memberships_on_band_id"
+  add_index "band_memberships", ["musician_id"], name: "index_band_memberships_on_musician_id"
 
   create_table "bands", force: true do |t|
     t.string   "bandname"

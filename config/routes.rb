@@ -4,9 +4,9 @@ Membership::Application.routes.draw do
 
   resources :bands
 
-  resources :band_members
-
-  root :to =>"musicians#index"
+  resources :band_memberships
+  root :to =>"bands#index"
+  #root :to =>"band_memberships#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
