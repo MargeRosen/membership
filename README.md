@@ -1,8 +1,16 @@
-== README for Membership
+# Membership #
 
-Use Rails 2.0.0
+This app collects basic date for Musicians, Bands and Band Membership.
 
-Musician data
-Band Data
-band_members
+Uses Rails 4.0.0
+
+```
+bundle
+rake db:setup
+rails s
+```
+
+### License: ###
+
+MIT http://marge.mit-license.org
 
