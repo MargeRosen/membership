@@ -1,6 +1,6 @@
 # Membership #
 
-This app collects basic date for Musicians, Bands and Band Membership.
+This app collects basic data for Musicians, Bands and Band Membership.
 
 Uses Rails 4.0.0
 
